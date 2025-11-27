@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page de Zapatos - Estilo y Comodidad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Encabezado (Header) */
+        header {
+            background-color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #ff5722; /* Color principal */
+            text-decoration: none;
+        }
+
+        /* Sección Héroe (Hero) */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x800?text=Imagen+de+Zapatos+Destacados') no-repeat center center/cover;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #ff5722;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e64a19;
+        }
+
+        /* Sección Características */
+        .features {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2em;
+            margin-bottom: 40px;
+            color: #ff5722;
+        }
+
+        .feature-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .feature-item {
+            flex-basis: calc(33% - 40px);
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-item h3 {
+            font-size: 1.4em;
+            color: #333;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .feature-item p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        /* Pie de página (Footer) */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Media Queries para Responsividad */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .feature-item {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">ShoeBrand</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Descubre la **Comodidad** y el **Estilo**</h1>
+            <p>Nuestra nueva colección redefine lo que esperas de un calzado diario.</p>
+            <a href="#comprar" class="cta-button">Ver Colección Ahora</a>
+        </div>
+    </section>
+    
+
+    <section class="features">
+        <div class="container">
+            <h2>¿Por Qué Elegir Nuestros Zapatos?</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Materiales Premium</h3>
+                    <p>Utilizamos solo cuero, tela y suelas de la más alta calidad para asegurar durabilidad.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Diseño Ergonómico</h3>
+                    <p>Diseñados por expertos para brindar soporte máximo y comodidad durante todo el día.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Estilo Versátil</h3>
+                    <p>Perfectos para cualquier ocasión, desde la oficina hasta una salida casual el fin de semana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ShoeBrand. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
